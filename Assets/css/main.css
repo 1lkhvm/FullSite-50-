@@ -1,0 +1,640 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+header nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 20px black;
+}
+header nav .hamburger-menu {
+  display: none;
+  color: white;
+}
+header nav .navbar-tools {
+  display: flex;
+  gap: 70px;
+}
+header nav .navbar-tools ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+header nav .navbar-tools ul li .dropbtn {
+  color: black;
+  font-size: 21px;
+  border: none;
+}
+header nav .navbar-tools ul li .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header nav .navbar-tools ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+}
+header nav .navbar-tools ul li .dropdown-content .dropdown-content a:hover {
+  background-color: #ffffff;
+}
+header nav .navbar-tools ul li .dropdown:hover .dropdown-content {
+  display: block;
+}
+header nav .navbar-tools ul li .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+header nav .navbar-tools ul li .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+header nav .navbar-tools ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 20px;
+}
+header nav .navbar-tools ul li i {
+  background-color: rgb(255, 255, 255);
+  transform: rotate(180deg);
+  transition: 1s;
+}
+header nav .navbar-tools ul li a:hover {
+  text-decoration: underline;
+}
+header nav .navbar-tools ul li i:hover {
+  transform: rotate(0deg);
+  transition: 1s;
+}
+header nav .navbar-tools li {
+  list-style: none;
+}
+header nav .navbar-tools li a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  gap: 20px;
+}
+header nav .navbar-tools li a:hover {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 800px) {
+  header nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header nav .mina-logo {
+    display: flex;
+    gap: 30px;
+  }
+  header nav .hamburger-menu {
+    display: block;
+    color: black;
+  }
+  header nav .navbar-tools {
+    display: flex;
+  }
+  header nav .navbar-tools ul {
+    display: none;
+  }
+  header nav .navbar-tools li {
+    list-style: none;
+  }
+  header nav .navbar-tools li a {
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  header nav .navbar-tools li a:hover {
+    text-decoration: underline;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+.main .handmade-ceramics {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Rectangle-YZ9P6kWjMnUBNL6W.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-top: 118px;
+}
+.main .handmade-ceramics .handmade-ceramics-text h1 {
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+.main .handmade-ceramics .handmade-ceramics-text p {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+.main .handmade-ceramics button {
+  width: 140px;
+  height: 50px;
+  border: none;
+  color: black;
+}
+.main .handmade-ceramics button:hover {
+  background-color: rgb(151, 153, 155);
+}
+@media only screen and (max-width: 800px) {
+  .main .handmade-ceramics {
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Rectangle-YZ9P6kWjMnUBNL6W.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .main .handmade-ceramics .handmade-ceramics-text h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+  }
+  .main .handmade-ceramics .handmade-ceramics-text p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+  .main .handmade-ceramics button {
+    width: 140px;
+    height: 50px;
+    border: none;
+    color: black;
+  }
+  .main .handmade-ceramics button:hover {
+    background-color: rgb(151, 153, 155);
+  }
+}
+.main .our-bestsellers {
+  display: flex;
+  gap: 45px;
+  flex-direction: column;
+}
+.main .our-bestsellers .our-bestsellers-text {
+  display: flex;
+  justify-content: center;
+}
+.main .our-bestsellers .our-bestsellers-text h2 {
+  color: purple;
+  font-size: 40px;
+  font-weight: 400;
+}
+.main .our-bestsellers .our-bestsellers-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main .our-bestsellers .our-bestsellers-card div {
+  display: flex;
+  width: 25%;
+  padding: 15px;
+  align-items: center;
+  max-width: 1000px;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .our-bestsellers .our-bestsellers-card div img {
+  width: 100%;
+}
+.main .our-bestsellers .our-bestsellers-card div h2 {
+  font-size: 30px;
+}
+.main .our-bestsellers .our-bestsellers-card div p {
+  font-size: 21px;
+}
+.main .our-bestsellers .our-bestsellers-button {
+  display: flex;
+  justify-content: center;
+}
+.main .our-bestsellers .our-bestsellers-button button {
+  width: 150px;
+  height: 60px;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(79, 0, 79);
+}
+.main .our-bestsellers .our-bestsellers-button button:hover {
+  background-color: rgb(79, 0, 79);
+  transition: 1.1ms;
+}
+@media only screen and (max-width: 800px) {
+  .main .our-bestsellers {
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+  }
+  .main .our-bestsellers .our-bestsellers-text {
+    display: flex;
+    justify-content: center;
+  }
+  .main .our-bestsellers .our-bestsellers-text h2 {
+    color: purple;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .main .our-bestsellers .our-bestsellers-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .our-bestsellers .our-bestsellers-card div {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .main .our-bestsellers .our-bestsellers-card div h2 {
+    font-size: 30px;
+  }
+  .main .our-bestsellers .our-bestsellers-card div p {
+    font-size: 21px;
+  }
+  .main .our-bestsellers .our-bestsellers-button {
+    display: flex;
+    justify-content: center;
+  }
+  .main .our-bestsellers .our-bestsellers-button button {
+    width: 150px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(79, 0, 79);
+  }
+  .main .our-bestsellers .our-bestsellers-button button:hover {
+    background-color: rgb(79, 0, 79);
+    transition: 1.1ms;
+  }
+}
+.main .home-decor-items {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Untitled-AzGRJwMK6BHxZypJ.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.main .home-decor-items h1 {
+  text-align: center;
+  font-size: 81px;
+  color: white;
+}
+.main .home-decor-items p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.main .home-decor-items button {
+  width: 150px;
+  height: 60px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(121, 118, 121);
+}
+.main .home-decor-items button:hover {
+  background-color: rgb(121, 118, 121);
+  transition: 1.1ms;
+}
+@media only screen and (max-width: 800px) {
+  .main .home-decor-items {
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Untitled-AzGRJwMK6BHxZypJ.png");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .main .home-decor-items h1 {
+    text-align: center;
+    font-size: 60px;
+    color: white;
+  }
+  .main .home-decor-items p {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  .main .home-decor-items button {
+    width: 150px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(121, 118, 121);
+  }
+  .main .home-decor-items button:hover {
+    background-color: rgb(121, 118, 121);
+    transition: 1.1ms;
+  }
+}
+.main .about-card-section {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+.main .about-card-section div {
+  width: 40%;
+}
+.main .about-card-section div img {
+  width: 100%;
+}
+.main .about-card-section div h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+.main .about-card-section div p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.main .about-card-section div button {
+  margin-top: 30px;
+  width: 190px;
+  height: 55px;
+  color: slateblue;
+  border: 2px solid rgb(79, 0, 79);
+}
+.main .about-card-section div button:hover {
+  background-color: rgb(79, 0, 79);
+  transition: 1s;
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .main .about-card-section {
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .about-card-section div {
+    width: 60%;
+  }
+  .main .about-card-section div img {
+    width: 100%;
+  }
+  .main .about-card-section div h2 {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  .main .about-card-section div p {
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .main .about-card-section div button {
+    margin-top: 30px;
+    width: 190px;
+    height: 55px;
+    color: slateblue;
+    border: 2px solid rgb(79, 0, 79);
+  }
+  .main .about-card-section div button:hover {
+    background-color: rgb(79, 0, 79);
+    transition: 1s;
+    color: white;
+  }
+}
+.main .sign-up-for-our {
+  background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-AGBpDkZaG5cRpbaw.png");
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 190px;
+}
+.main .sign-up-for-our .sign-up-for-text h3 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+.main .sign-up-for-our .sign-up-for-inp input {
+  width: 250px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: black;
+  border-radius: 30px;
+}
+.main .sign-up-for-our .sign-up-for-btn button {
+  width: 100px;
+  height: 30px;
+  color: rgb(89, 89, 89);
+  border: none;
+  border-radius: 30px;
+}
+.main .sign-up-for-our .sign-up-for-btn button:hover {
+  background-color: rgb(205, 205, 205);
+  transition: 1s;
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .main .sign-up-for-our .sign-up-for-our {
+    background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-AGBpDkZaG5cRpbaw.png");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 190px;
+  }
+  .main .sign-up-for-our .sign-up-for-our .sign-up-for-text h3 {
+    text-align: center;
+    font-size: 55px;
+    color: white;
+  }
+  .main .sign-up-for-our .sign-up-for-our .sign-up-for-inp input {
+    width: 240px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: black;
+    border-radius: 30px;
+  }
+  .main .sign-up-for-our .sign-up-for-our .sign-up-for-btn button {
+    margin-top: 30px;
+    width: 190px;
+    height: 55px;
+    color: rgb(89, 89, 89);
+    border: none;
+    border-radius: 30px;
+  }
+  .main .sign-up-for-our .sign-up-for-our .sign-up-for-btn button:hover {
+    background-color: rgb(205, 205, 205);
+    transition: 1s;
+    color: white;
+  }
+}
+.main .follow-us-on-instagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .follow-us-on-instagram .follow-us-on-instagram-text h2 {
+  margin-bottom: 100px;
+  text-align: center;
+  color: slateblue;
+  font-size: 50px;
+}
+.main .follow-us-on-instagram .follow-us-on-instagram-cards {
+  display: flex;
+  width: 90%;
+  gap: 30px;
+  align-items: center;
+}
+.main .follow-us-on-instagram .mina-studio {
+  margin-top: 50px;
+  display: flex;
+  gap: 20px;
+}
+.main .follow-us-on-instagram .mina-studio p {
+  color: rgb(27, 45, 110);
+  font-size: 20px;
+}
+.main .follow-us-on-instagram .mina-studio p:hover {
+  text-decoration: underline;
+}
+.main .follow-us-on-instagram .mina-studio iframe {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 800px) {
+  .main .follow-us-on-instagram .follow-us-on-instagram-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .follow-us-on-instagram .follow-us-on-instagram-text h2 {
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+    color: slateblue;
+    font-size: 50px;
+  }
+  .main .follow-us-on-instagram .follow-us-on-instagram-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main .footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(216, 216, 216);
+}
+.main .footer .mina-left {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main .footer .mina-left .sosial {
+  display: flex;
+  gap: 30px;
+}
+.main .footer .mina-right ul {
+  display: flex;
+  gap: 30px;
+}
+.main .footer .mina-right ul li {
+  list-style: none;
+}
+.main .footer .mina-right ul li a {
+  color: black;
+}
+@media only screen and (max-width: 800px) {
+  .main .footer {
+    margin-top: 100px;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(216, 216, 216);
+  }
+  .main .footer .mina-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+  }
+  .main .footer .mina-left .sosial {
+    display: flex;
+    gap: 30px;
+  }
+  .main .footer .mina-right {
+    display: flex;
+  }
+  .main .footer .mina-right ul {
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+  }
+  .main .footer .mina-right ul li {
+    list-style: none;
+  }
+  .main .footer .mina-right ul li a {
+    color: black;
+  }
+}/*# sourceMappingURL=main.css.map */
