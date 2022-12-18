@@ -1,0 +1,222 @@
+body {
+    .suss-bg {
+        background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/Frame-m6LKEnXEpDfX8lgk.png");
+
+        width: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 118px;
+
+        h1 {
+            font-size: 100px;
+            color: white;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 800px) {
+            h1 {
+                font-size: 40px;
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+
+    .suss-text {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+
+
+        p {
+            color: black;
+            font-size: 30px;
+            font-weight: 500;
+        }
+        @media only screen and (max-width: 800px){
+            padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+
+
+        p {
+            color: black;
+            font-size: 19px;
+            font-weight: 500;
+        }
+        }
+    }
+
+    .card1-sus {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #ffe4c469;
+
+        .card1-img {
+            width: 40%;
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+
+
+        .card1-text {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+
+            h2 {
+                font-size: 44px;
+                color: #4d2c57;
+            }
+
+            p {
+                font-size: 24px;
+                color: #4d2c57;
+            }
+
+        }
+
+        @media only screen and (max-width: 800px) {
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffe4c469;
+
+            .card1-img {
+                width: 50%;
+
+                img {
+                    width: 100%;
+
+                }
+            }
+
+
+
+            .card1-text {
+                display: flex;
+                width: 40%;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                gap: 50px;
+                padding-bottom: 20px;
+
+                h2 {
+                    font-size: 44px;
+                    color: #4d2c57;
+                }
+
+                p {
+                    font-size: 24px;
+                    color: #4d2c57;
+                }
+
+            }
+        }
+
+    }
+
+    .card2-sus {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        background-color: #b7782a;
+        padding-bottom: 300px;
+
+        .card2-img {
+            width: 40%;
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+
+
+        .card2-text {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+
+            h2 {
+                font-size: 65px;
+                color: white;
+            }
+
+            p {
+                font-size: 24px;
+                color: white;
+            }
+
+        }
+        @media only screen and (max-width: 800px){
+            padding-top: 10px;
+        display: flex;
+        align-items: center;
+    flex-direction: column;
+        background-color: #b7782a;
+        padding-bottom: 300px;
+
+        .card2-img {
+            width: 50%;
+
+            img {
+                width: 100%;
+
+            }
+        }
+
+
+
+        .card2-text {
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 30px;
+
+            h2 {
+                font-size: 40px;
+                color: white;
+            }
+
+            p {
+                font-size: 15px;
+                color: white;
+            }
+
+        }
+        }
+    }
+
+}

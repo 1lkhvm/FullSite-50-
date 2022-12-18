@@ -1,0 +1,135 @@
+main {
+    .contact-bg-text {
+
+        background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/kk-AVLnvEyZ8ehlnGNB.png");
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 118px;
+
+        h1 {
+            font-size: 100px;
+            color: white;
+        }
+        
+
+        @media only screen and (max-width: 800px){
+            background-image: url("https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/minattnvs/kk-AVLnvEyZ8ehlnGNB.png");
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 118px;
+
+        h1 {
+            font-size: 60px;
+            color: white;
+        }
+        }
+    }
+
+
+    .lastname {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        .headquarters {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                h3 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            div {
+                input {
+                    width: 450px;
+                    height: 50px;
+                }
+
+                button {
+                    width: 300px;
+                    height: 100px;
+                }
+            }
+
+        }
+
+        @media only screen and (max-width: 1000px) {
+            padding-top: 30px;
+            display: flex;
+
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+
+            .headquarters {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    h3 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                }
+            }
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                div {
+                    input {
+                        width: 200px;
+                        height: 50px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
